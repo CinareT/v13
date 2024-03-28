@@ -1,0 +1,33 @@
+
+
+*{
+     box-sizing: border-box;
+     padding: 0;
+     margin: 0;
+}
+html,
+body {
+     font-family: Inter;
+}
+body{
+     line-height: 1.5;
+     --webkit-font-smoothing: antialiased;
+}
+img{
+     display: block;
+     max-width: 100%;
+     width: 100%;
+     height: auto;
+}
+input,
+button,
+textarea,
+select {
+     font: inherit;
+}
+h1, h2,
+h3, h4,
+h6, h6,
+a {
+     color: var(--white);
+}
