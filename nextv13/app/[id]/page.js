@@ -4,8 +4,13 @@ import styles from "./styles.module.css";
 import { notFound } from "next/navigation";
 
 async function getPosts(id) {
-    const response = await fetch(`https://dummyjson.com/posts/${id}`);
-    return await response.json();
+    try {
+        const response = await fetch(`https://dummyjson.com/posts/${id}`);
+        return await response.json();
+    }catch(error) {
+        throw new Error(error);
+    }
+    
 }
 
 export default async function Page(params) {
